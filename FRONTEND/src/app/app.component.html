@@ -1,0 +1,39 @@
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="over" [fixedInViewport]="true" opened mode ="side">
+    <mat-accordion>
+      <a mat-button style="text-align: center" [routerLink]="['/home']">
+        <mat-icon>home</mat-icon>
+      </a>
+
+      <mat-expansion-panel class="expansion-panel">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            IZABERI:
+          </mat-panel-title>
+          <mat-panel-description>
+            Spisak informacija o:
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-nav-list>
+          <a mat-button [routerLink]="['/banka']">Banka</a>
+        </mat-nav-list>
+        <mat-nav-list>
+          <a mat-button [routerLink]="['/korisnik_usluge']">Korisnik usluge</a>
+        </mat-nav-list>
+        <mat-nav-list>
+          <a mat-button [routerLink]="['/filijala']">Filijala</a>
+        </mat-nav-list>
+        <mat-nav-list>
+          <a mat-button [routerLink]="['/usluga']">Usluga</a>
+        </mat-nav-list>
+      </mat-expansion-panel>
+
+
+    </mat-accordion>
+  </mat-sidenav>
+
+  <router-outlet>
+    
+  </router-outlet>
+</mat-sidenav-container>

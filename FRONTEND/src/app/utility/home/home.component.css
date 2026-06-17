@@ -1,0 +1,92 @@
+.glavni-header {
+  position: absolute !important; 
+  top: 0;
+  left: 0;
+  z-index: 10; 
+  
+  background-color: rgba(30, 30, 30, 0.25) !important; 
+  
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 15px 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.naslov-levo {
+  margin: 0 !important;
+  font-size: 24px;
+  color: white !important; 
+}
+
+.meni-desno {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 20px !important;
+}
+
+.info-labela {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 !important;
+  color: white !important; 
+}
+
+
+.link-btn {
+  font-size: 15px;
+  color: black;
+  background-color: white; 
+  padding: 8px 20px;
+  text-decoration: none;
+  border-radius: 25px; 
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+  transition: all 0.2s ease; 
+}
+
+.link-btn:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.slika-kontejner {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.banka-slika {
+  width: 100%;
+  display: block;
+}
+
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.slika-kontejner {
+    flex: 1; 
+}
+
+
+
+footer {
+    background-color: #89CFF0; 
+    color: #1a1a1a;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}

@@ -1,0 +1,126 @@
+/* --- FIX ZA FOOTER --- */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Zauzima celu visinu ekrana */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    padding: 30px;
+    flex: 1; /* Ovaj deo gura podnožje na dno */
+}
+
+/* --- ZAGLAVLJE I PODNOŽJE --- */
+header, footer {
+    background-color: #89CFF0; 
+    color: #1a1a1a;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1, footer p {
+    margin: 0;
+    text-align: center;
+}
+
+/* --- LEVA I DESNA KOLONA --- */
+.autor-info-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px; /* Razmak između leve i desne kolone */
+    margin-top: 20px;
+}
+
+.leva-kolona {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrira sliku i dugme */
+    gap: 15px;
+    width: 250px; /* Fiksna širina leve strane */
+}
+
+.leva-kolona img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.desna-kolona {
+    flex: 1; /* Popunjava ostatak prostora na desnoj strani */
+}
+
+/* --- OSTATAK TEKSTA --- */
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #333;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* --- DUGMAD --- */
+.link-povratak {
+    display: inline-block;
+    border: 1.5px solid #1a1a1a;
+    border-radius: 20px;
+    padding: 6px 16px;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.link-povratak:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn-autor {
+    display: inline-block;
+    background-color: transparent;
+    color: #1a1a1a;
+    border: 2px solid #89CFF0;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    width: 100%; /* Širi dugme da bude u ravnini sa slikom */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.btn-autor:hover {
+    background-color: #89CFF0;
+    color: #fff;
+}
